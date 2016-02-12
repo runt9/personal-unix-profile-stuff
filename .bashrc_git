@@ -1,0 +1,18 @@
+function gitFindRoot {
+    if ! git rev-parse --show-toplevel >/dev/null; then
+        return 1
+    fi
+
+    git rev-parse --show-toplevel 2>/dev/null
+    return 0
+}
+
+function cdtop {
+    local top=$(gitFindRoot)
+    if [ $? -ne 0 ]; then
+        echo $top
+        return
+    fi
+
+    cd $top
+}

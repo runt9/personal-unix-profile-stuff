@@ -1,0 +1,6 @@
+alias df='df -h'
+alias du='du -h'
+alias grep='grep --color=auto'
+alias ll='ls -Ahl'
+alias ls='ls -G --color=auto'
+alias vi='vim'

@@ -1,0 +1,17 @@
+BoldAsFont=no
+BackgroundColour=34,49,55
+ForegroundColour=182,182,182
+Transparency=off
+OpaqueWhenFocused=yes
+CursorType=block
+FontHeight=10
+BoldAsColour=yes
+FontSmoothing=full
+AllowBlinking=yes
+Font=Consolas
+FontIsBold=yes
+Columns=271
+Rows=94
+ScrollbackLines=999999999
+BoldCyan=255,100,0
+Cyan=200,80,0
