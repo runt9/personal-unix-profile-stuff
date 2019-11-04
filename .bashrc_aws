@@ -1,0 +1,14 @@
+function switchAwsProfile() {
+    local profile=$1
+    local awsDir="$HOME/.aws"
+    local profileFile="$awsDir/$profile"
+    local credentialsFile="$awsDir/credentials"
+
+    if [ -f $profileFile ]; then
+        cp -v $profileFile $credentialsFile
+    else
+        echo "ERROR: AWS Credentials $profile does not exist"
+    fi
+}
+
+[ -e $HOME/.bashrc_awscompletion ] && . $HOME/.bashrc_awscompletion
