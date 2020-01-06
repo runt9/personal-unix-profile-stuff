@@ -11,3 +11,5 @@ export PS1='\[\e[1;36m\]\u:\[\e[0;38m\]\w\[\e[0;32m\]$(__git_ps1 " [%s] ")\[\e[0
 # Normal exports
 export EDITOR=vi
 shopt -s globstar
+
+complete -cf sudo
